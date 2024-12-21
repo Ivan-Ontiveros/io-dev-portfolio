@@ -8,5 +8,8 @@
   "keywords": [],
   "author": "Ivan Ontiveros",
   "readme": "./README.md",
-  "license": "SEE LICENSE"
+  "license": "SEE LICENSE",
+  "workspaces": [
+    "apps/*"
+  ]
 }

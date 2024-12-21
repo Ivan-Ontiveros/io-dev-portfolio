@@ -1,0 +1,12 @@
+{
+  "name": "io-dev-portfolio",
+  "version": "0.0.0",
+  "description": "My personal portfolio",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ivan Ontiveros",
+  "readme": "./README.md",
+  "license": "SEE LICENSE"
+}

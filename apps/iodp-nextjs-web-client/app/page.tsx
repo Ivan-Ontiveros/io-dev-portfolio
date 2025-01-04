@@ -1,24 +1,14 @@
-import Link from "next/link";
+import React from "react";
 
-export default function Home() {
-  const projects = [
-    { id: 1, name: "Project 1" },
-    { id: 2, name: "Project 2" },
-    // Add more projects here
-  ];
-
+const HomePage: React.FC = () => {
   return (
-    <div>
-      <h1>Projects</h1>
-      <ul>
-        {projects.map((project) => (
-          <li key={project.id}>
-            <Link href={`/projects/${project.id}`}>
-              <span>{project.name}</span>
-            </Link>
-          </li>
-        ))}
-      </ul>
+    <div className="flex flex-col items-center justify-center h-screen">
+      <h1 className="text-3xl font-bold">Under Maintenance</h1>
+      <p className="text-lg">
+        We are currently working on the website. Please check back later.
+      </p>
     </div>
   );
-}
+};
+
+export default HomePage;

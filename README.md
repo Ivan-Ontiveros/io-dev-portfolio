@@ -18,10 +18,10 @@ This application is designed to:
 
 ## Technology Stack
 
-- **Frontend:** ReactJS
-- **Backend:** StrapiJS
-- **Hosting:** AWS
-- **CI/CD:** CircleCI
+- **Architecture:** NPM Workspaces
+- **Frontend:** NextJS
+- **Hosting:** Vercel
+- **CI/CD:** Vercel Auto-Deploy
 
 ## License
 

@@ -25,11 +25,48 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased appContainer`}
       >
-        {/* <header>HEADER</header> */}
-        <main>{children}</main>
-        {/* <footer>FOOTER</footer> */}
+        <header>
+          <div className="containerContent flex justify-between">
+            <div className="navbar-brand" aria-label="Site branding">
+              <span className="brand-name" aria-label="Candidate's name">
+                Ivan Ontiveros
+              </span>
+              <span className="title">
+                Software Engineer at Aetna, a CVS Health Company
+              </span>
+              <span className="location">Buckeye, Arizona, United States</span>
+            </div>
+            <nav className="text-right grid items-end">
+              <ul className="flex space-x-4">
+                <li className="text-lg">
+                  <a href="/">Home</a>
+                </li>
+                <li className="text-lg">
+                  <a href="/about">About</a>
+                </li>
+                <li className="text-lg">
+                  <a href="/skills">Skills & Certifications</a>
+                </li>
+                <li className="text-lg">
+                  <a href="/resume">Resume</a>
+                </li>
+                <li className="text-lg">
+                  <a href="/contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <main>
+          <div className="containerContent">{children}</div>
+        </main>
+        <footer>
+          <div className="containerContent">
+            &copy; 2024-2025 Ivan Ontiveros. All rights reserved.
+          </div>
+        </footer>
       </body>
     </html>
   );

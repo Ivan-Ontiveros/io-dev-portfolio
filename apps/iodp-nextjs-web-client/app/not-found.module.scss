@@ -1,0 +1,12 @@
+.not-found-page {
+  display: grid;
+  align-items: center;
+  min-height: 80%;
+
+  article {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

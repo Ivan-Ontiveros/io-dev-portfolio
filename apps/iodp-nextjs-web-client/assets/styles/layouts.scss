@@ -1,0 +1,49 @@
+@use "./globals.scss";
+
+.appContainer {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+
+  header .navbar-brand {
+    span {
+      display: block;
+      text-align: left;
+    }
+  }
+
+  header,
+  main,
+  footer {
+    @extend .responsiveContainer;
+  }
+
+  header,
+  footer {
+    background-color: #111;
+    color: white;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 4px 10px 3px rgba(29, 29, 29, 0.5);
+    z-index: 1;
+  }
+
+  main {
+    background-color: #efefef;
+    padding: 2rem;
+  }
+}
+
+.responsiveContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  .containerContent {
+    grid-column: 2 / span 10;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}

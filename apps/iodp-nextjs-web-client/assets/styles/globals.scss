@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+  background-color: #111;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -68,5 +69,27 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    h1,
+    .brand-name,
+    h2 {
+      font-family: "Space Grotesk", sans-serif;
+    }
+    h1,
+    .brand-name {
+      @apply text-4xl font-bold leading-tight;
+    }
+    h2 {
+      @apply text-3xl font-semibold leading-snug;
+      margin-bottom: 1rem; // Adjust the value as needed
+    }
+    h3 {
+      @apply text-2xl font-semibold leading-snug;
+    }
+    h4 {
+      @apply text-xl font-semibold leading-snug;
+    }
+    p {
+      max-width: 70ch;
+    }
   }
 }

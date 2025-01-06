@@ -1,0 +1,13 @@
+.webPage {
+  display: grid;
+  padding: 2rem;
+
+  h1 {
+    justify-self: left;
+    margin-bottom: 2rem;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+}

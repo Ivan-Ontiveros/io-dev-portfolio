@@ -1,8 +1,9 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import styles from "./not-found.module.scss";
+import { useRouter } from "next/navigation";
+import { Tile } from "@/components/base";
+import styles from "./index.module.scss";
 
 const NotFoundPage = () => {
   const router = useRouter();
@@ -25,13 +26,19 @@ const NotFoundPage = () => {
 
   return (
     <div className={styles["not-found-page"]}>
-      <article>
-        <h1>404 - Page Not Found</h1>
-        <div>The page you are looking for does not exist.</div>
-        <div>
-          You will be redirected to the homepage in {countdown} seconds.
+      <Tile>
+        <h1 className="text-3xl font-bold">Under Maintenance</h1>
+        <div className="text-lg">
+          We are currently working on the website. Please check back later.
         </div>
-      </article>
+
+        {/* <h1>404 - Page Not Found</h1>
+        <div>The page you are looking for does not exist.</div> */}
+        <div>
+          You will be redirected to the homepage in{" "}
+          <span style={{ color: "red" }}>{countdown}</span> seconds.
+        </div>
+      </Tile>
     </div>
   );
 };

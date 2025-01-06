@@ -1,0 +1,48 @@
+.homePage {
+  display: grid;
+  padding: 2rem;
+  justify-content: center;
+
+  section {
+    margin-bottom: 2rem;
+  }
+
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    gap: 1rem;
+  }
+}
+
+.introductionSection {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto 1fr;
+}
+
+.skillsList {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0 0 1rem 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
+
+.not-found-page {
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 80%;
+  text-align: center;
+
+  div {
+    margin-top: 1rem;
+  }
+}

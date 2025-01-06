@@ -1,0 +1,30 @@
+.project-card {
+  display: grid;
+
+  h4 {
+    margin-bottom: 0.5rem;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+
+  .btn-group {
+    justify-content: flex-end;
+    margin-top: 1rem;
+    display: inline-flex;
+    gap: 0.5rem;
+  }
+}
+
+.tech-stack-list {
+  list-style: disc;
+  padding-left: 2rem;
+  margin: 0;
+
+  li {
+    background: none;
+    color: hsl(240 10% 3.9%);
+    padding: 0;
+    border-radius: 0;
+  }
+}

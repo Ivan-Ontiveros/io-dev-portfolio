@@ -7,10 +7,10 @@ const ContactPage = () => {
       <Tile className={styles["contact-tile"]}>
         <h1>Contact Me</h1>
         <p>
-          Thank you for your interest in connecting! To maintain a secure and
+          {`Thank you for your interest in connecting! To maintain a secure and
           efficient communication channel, I prefer to be contacted through
           LinkedIn. You can send me a direct message, and I'll get back to you
-          as soon as possible.
+          as soon as possible.`}
         </p>
         <p>
           Click the button below to visit my LinkedIn profile and reach out:

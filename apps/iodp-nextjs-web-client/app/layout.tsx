@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "@/assets/styles/_index.scss";
 import Link from "next/link";
+import "@/assets/styles/_index.scss";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +30,7 @@ export default function RootLayout({
       >
         <header>
           <div className="containerContent flex justify-between">
-            <div className="navbar-brand" aria-label="Site branding">
+            <Link href="/" className="navbar-brand" aria-label="Site branding">
               <span className="brand-name" aria-label="Candidate's name">
                 Ivan Ontiveros
               </span>
@@ -38,7 +38,7 @@ export default function RootLayout({
                 Software Engineer at Aetna, a CVS Health Company
               </span>
               <span className="location">Buckeye, Arizona, United States</span>
-            </div>
+            </Link>
             <nav className="text-right grid items-end">
               <ul className="flex space-x-4">
                 <li className="text-lg">

@@ -29,7 +29,9 @@ export const AppHeader = () => {
           <span className="brand-name" aria-label="Candidate's name">
             Ivan Ontiveros
           </span>
-          <span className="title">Software Engineer at Health Company</span>
+          <span className="title">
+            Software Engineer at Aetna, a CVS Health Company
+          </span>
           <span className="location">Arizona, United States</span>
         </Link>
 

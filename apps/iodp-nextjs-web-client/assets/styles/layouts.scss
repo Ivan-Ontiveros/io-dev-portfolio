@@ -5,11 +5,9 @@
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
 
-  header .navbar-brand {
-    span {
-      display: block;
-      text-align: left;
-    }
+  header .navbar-brand span {
+    display: block;
+    text-align: left;
   }
 
   header,
@@ -31,10 +29,7 @@
 
   main {
     position: relative;
-    background-image: url("/images/tech-bg.webp");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: url("/images/tech-bg.webp") center/cover fixed;
     min-height: 100vh;
 
     &::before {
@@ -58,10 +53,12 @@
   grid-template-columns: repeat(12, 1fr);
 
   .containerContent {
-    grid-column: 2 / span 10;
+    grid-column: 1 / span 12;
   }
 
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
+  @media (min-width: 901px) {
+    .containerContent {
+      grid-column: 2 / span 10;
+    }
   }
 }

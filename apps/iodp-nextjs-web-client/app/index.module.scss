@@ -9,7 +9,7 @@
 
   .projects-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
     gap: 1rem;
   }
 }
@@ -17,7 +17,7 @@
 .introductionSection {
   display: grid;
   gap: 1rem;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr;
 }
 
 .skillsList {
@@ -44,5 +44,19 @@
 
   div {
     margin-top: 1rem;
+  }
+}
+
+// DESKTOP VIEW:
+@media (min-width: 1301px) {
+  .introductionSection {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+// HANDLE MOBILE & SMALL TABLET VIEW:
+@media (max-width: 900px) {
+  .homePage {
+    padding: 4rem;
   }
 }
